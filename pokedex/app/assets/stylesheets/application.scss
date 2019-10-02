@@ -1,0 +1,227 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "variables";
+
+ html {
+   height: 100%;
+ }
+
+ body {
+   font-family: sans-serif;
+   background: white;
+   color: $grey;
+   font-size: 12px;
+   height: 100%;
+ }
+
+ header {
+   display: flex;
+   justify-content: center;
+   background-color: $red;
+   padding: 10px;
+
+   img {
+     width: 43px;
+     height: 43px;
+   }
+ }
+
+ nav {
+   width: 900px;
+   background-color: $red;
+   padding: 6px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   ul {
+     display: flex;
+     justify-content: flex-end;
+
+     li {
+       a {
+         background-color: white;
+         border-radius: 4px;
+         color: $grey;
+         font-weight: 700;
+         display: block;
+         padding: 15px;
+         text-decoration: none;
+         text-transform: uppercase;
+         cursor: pointer;
+         z-index: 1;
+         position: relative;
+         -webkit-transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+         -moz-transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+         -ms-transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+         -o-transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+         transition: box-shadow 0.1s ease-out, background-color 0.1s ease-in-out;
+
+         &:hover {
+           color: $light-grey;
+           -webkit-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.75);
+           -moz-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.75);
+           box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.75);
+         }
+
+         &:active {
+           background-color: $light-grey;
+           color: white;
+           -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+           box-shadow: none;
+         }
+       }
+     }
+   }
+ }
+
+ #root {
+   height: 100%;
+   padding-top: 20px;
+   
+ }
+
+ h2 {
+   font-size: 32px;
+ }
+
+ h3 {
+   font-size: 24px;
+   text-align: center;
+   color: $black;
+ }
+
+.poke-img {
+  height: 20px;
+  padding-left: 5px;
+  
+}
+
+.poke-side{
+  max-width: 300px;
+  width: 300px;
+}
+
+.poke-ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0 0 0 0;
+ 
+}
+
+.poke-ul li{
+   border-top: 1px solid black;
+   padding-bottom: 5px;
+   padding-top: 5px;
+}
+
+.poke-ul li:last-child{
+  border-bottom: 1px solid black;
+}
+
+.poke-ul span {
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.poke-root{
+  display: flex;
+   justify-content: flex-start;
+   flex-direction: row;
+}
+
+.Poke-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background-color: grey;
+  padding: 20px;
+  margin: 40px;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+.Poke-detail p {
+  color: black;
+  font-size: 20px;
+  font-weight: 100;
+}
+.Poke-detail h2 {
+  font-size: 32px;
+  color: black;
+}
+
+.item-images {
+  width: 550px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 600px;
+  padding: 0;
+}
+.item-images ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-images li {
+  list-style: none;
+}
+
+.item-images h3 {
+  text-align: center;
+}
+
+.item-images img{
+  width: 150px;
+  padding: 5px;
+}
+
+.poke-items {
+  background-color: lightblue;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.item-ul li{
+  list-style: none;
+  color: black;
+  font-size: 20px;
+}
+
+.item-ul li:last-child {
+  padding-top: 5px;
+}
+
+.item-ul {
+  text-align: center;
+}
